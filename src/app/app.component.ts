@@ -17,6 +17,5 @@ export class AppComponent {
   addTodo() {
     this.todos.push(this.inputText);
     this.inputText = "";
-    // console.log("inputText: ", this.inputText)
   }
 }
