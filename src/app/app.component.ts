@@ -13,4 +13,10 @@ export class AppComponent {
   constructor() {
     
   }
+
+  addTodo() {
+    this.todos.push(this.inputText);
+    this.inputText = "";
+    // console.log("inputText: ", this.inputText)
+  }
 }
