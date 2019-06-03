@@ -5,5 +5,5 @@
     <input name="todo" [(ngModel)]="inputText" type="text"/>
     <button (click)="addTodo()">Add Todo</button>
   </form>
-  <todo-list [todos]="todos" ></todo-list>
+  <todo-list [todos]="todos" deleteTodo="deleteTodo" ></todo-list>
 </div>

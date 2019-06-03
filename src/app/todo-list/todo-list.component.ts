@@ -8,10 +8,14 @@ import { Component, OnInit, Input } from '@angular/core';
 export class TodoListComponent implements OnInit {
 
   @Input('todos') todos: any;
+  @Input('deleteTodo') deleteTodo: any;
 
-  constructor() { }
+  constructor() { 
+
+  }
 
   ngOnInit() {
+    console.log(this.deleteTodo)
   }
 
 }

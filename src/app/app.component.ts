@@ -7,7 +7,22 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
 
-  todos: any = ["Learn Angular", "Learn Node", "Learn .Net"];
+  todos: any = [
+    {
+      todo: "Learn Angular",
+      id: 1 
+    },
+    
+    {
+      todo: "Learn Node",
+      id: 2 
+    },
+    
+    {
+      todo: "Learn .Net",
+      id: 3 
+    },
+  ];
   inputText: string = "";
 
   constructor() {
@@ -17,5 +32,9 @@ export class AppComponent {
   addTodo() {
     this.todos.push(this.inputText);
     this.inputText = "";
+  }
+
+  deleteTodo(id) {
+    console.log(id)
   }
 }
