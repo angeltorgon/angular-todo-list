@@ -6,8 +6,9 @@ import { Component } from '@angular/core';
   styleUrls: ['./app.component.css']
 })
 export class AppComponent {
-  
-  todos: any = ["Learn Angular", "Learn Node", "Learn .Net"]
+
+  todos: any = ["Learn Angular", "Learn Node", "Learn .Net"];
+  inputText: string = "";
 
   constructor() {
     
